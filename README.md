@@ -13,7 +13,6 @@ Stream your Windows desktop to a 1.44" 128×128 TFT display over WiFi. The ESP32
 - [Prerequisites](#prerequisites)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
-- [Can I use the TFT as an extended display?](#can-i-use-the-tft-as-an-extended-display)
 - [Troubleshooting](#troubleshooting)
 - [Ideas to Improve](#ideas-to-improve)
 - [Project Structure](#project-structure)
@@ -116,14 +115,6 @@ python transmitter.py --ip 192.168.1.100 --monitor-index 2
 ```
 
 Stop streaming with **Ctrl+C**.
-
----
-
-## Can I use the TFT as an extended display?
-
-No. Windows extend mode requires a real display output (HDMI, DisplayPort, or USB display adapter). This TFT is a WiFi client that receives frames from the script, so you can only **mirror** an existing screen.
-
-If you have two monitors, use `--monitor-index 2` to mirror the second monitor on the TFT.
 
 ---
 
